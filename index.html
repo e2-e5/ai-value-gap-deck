@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Value Gap — Why Wrappers Fail, Why Infrastructure Wins</title>
+  <meta name="description" content="Short presentation on the AI value gap, why AI wrappers fail, and why AI as infrastructure wins." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/base.css" />
+  <link rel="stylesheet" href="styles/theme.css" />
+  <link rel="stylesheet" href="styles/blocks.css" />
+</head>
+<body>
+  <div class="progress-bar" id="progressBar"></div>
+  <nav class="nav-dots" id="navDots" aria-label="Slide navigation"></nav>
+
+  <section class="slide slide-hero" data-title="Cover">
+    <div class="ambient ambient-a"></div>
+    <div class="ambient ambient-b"></div>
+    <div class="slide-content layout-hero">
+      <p class="eyebrow reveal">CEO / Founder Brief · v0.1</p>
+      <h1 class="reveal">The <span class="text-accent">AI value gap</span><br />is not a model problem.</h1>
+      <p class="lede reveal">Most companies deploy AI faster than they create value. The trap is treating AI as a wrapper or pilot. The winners build AI as infrastructure.</p>
+      <div class="hero-tags reveal">
+        <span class="tag">Roland Berger backbone</span>
+        <span class="tag">Why wrappers fail</span>
+        <span class="tag">AI as infrastructure</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="slide" data-title="Signal">
+    <div class="slide-content layout-two-col">
+      <div class="stack reveal">
+        <p class="eyebrow">The signal</p>
+        <h2>AI adoption is up.<br />Value realization is not.</h2>
+        <p>Roland Berger’s 2026 report frames the core issue clearly: companies are investing aggressively, but returns lag spending for the overwhelming majority.</p>
+      </div>
+      <div class="grid-2 stats-grid reveal">
+        <article class="stat-card emphasis">
+          <span class="stat-number">~90%</span>
+          <span class="stat-label">of firms report returns lagging spending</span>
+        </article>
+        <article class="stat-card">
+          <span class="stat-number">99%</span>
+          <span class="stat-label">formal leadership involvement in AI</span>
+        </article>
+        <article class="stat-card">
+          <span class="stat-number">~40%</span>
+          <span class="stat-label">primarily rely on off-the-shelf AI solutions</span>
+        </article>
+        <article class="stat-card success">
+          <span class="stat-number">~10%</span>
+          <span class="stat-label">consistently capture meaningful impact</span>
+        </article>
+      </div>
+    </div>
+    <div class="source-note">Source: Roland Berger, “The AI value gap”, 2026</div>
+  </section>
+
+  <section class="slide" data-title="Diagnosis">
+    <div class="slide-content layout-single">
+      <div class="stack center reveal">
+        <p class="eyebrow">What is really failing</p>
+        <h2>Most companies don’t have an AI model problem.<br />They have an <span class="text-accent">operating model</span> problem.</h2>
+      </div>
+      <div class="grid-3 reveal">
+        <article class="thesis-card">
+          <h3>Wrong dashboard</h3>
+          <p>They measure launches, pilots, or tokens — not time-to-value, workflow conversion, margin impact, or decision velocity.</p>
+        </article>
+        <article class="thesis-card active">
+          <h3>Shallow integration</h3>
+          <p>They buy modern AI but attach it to brittle legacy workflows. The surface looks smart; the system underneath stays dumb.</p>
+        </article>
+        <article class="thesis-card">
+          <h3>No compounding loop</h3>
+          <p>Every use case is funded as a one-off project, so knowledge, telemetry, governance, and reusable tooling never compound.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="slide" data-title="Wrappers">
+    <div class="slide-content layout-single">
+      <div class="stack center reveal">
+        <p class="eyebrow">Why AI wrappers fail</p>
+        <h2>Wrappers are great for demos.<br />Bad at carrying operational load.</h2>
+      </div>
+      <div class="compare-shell reveal">
+        <div class="compare-panel bad">
+          <h3>Wrapper logic</h3>
+          <ul class="bullet-list">
+            <li>Fast to ship on top of someone else’s model</li>
+            <li>Thin UI over prompts and APIs</li>
+            <li>Limited control over data, quality, governance</li>
+            <li>Hard to defend when distribution or pricing shifts</li>
+            <li>Breaks when workflows, permissions, or edge cases get real</li>
+          </ul>
+        </div>
+        <div class="compare-divider">→</div>
+        <div class="compare-panel good">
+          <h3>Infrastructure logic</h3>
+          <ul class="bullet-list">
+            <li>AI is wired into data, workflows, and system boundaries</li>
+            <li>Shared evaluation, observability, and fallback layers</li>
+            <li>Governance is embedded, not added later</li>
+            <li>New use cases become cheaper over time</li>
+            <li>Advantage compounds through reuse and operational learning</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="slide" data-title="Industrializers">
+    <div class="slide-content layout-two-col">
+      <div class="stack reveal">
+        <p class="eyebrow">Roland Berger’s answer</p>
+        <h2>The winners are not the fastest adopters.<br />They are the <span class="text-accent">industrializers</span>.</h2>
+        <p>Industrializers don’t spend more or move faster. They run AI differently: deeper ownership, tighter standards, embedded governance, and ongoing operational improvement.</p>
+      </div>
+      <div class="rail reveal">
+        <article class="rail-item current">
+          <span class="rail-kicker">Own the system</span>
+          <p>Retain control even when working with partners.</p>
+        </article>
+        <article class="rail-item hover">
+          <span class="rail-kicker">Rewire, don’t wrap</span>
+          <p>Embed AI into enterprise workflows and data flows.</p>
+        </article>
+        <article class="rail-item selected">
+          <span class="rail-kicker">Govern in-platform</span>
+          <p>Standards and controls live in the platform, not in PowerPoint committees.</p>
+        </article>
+        <article class="rail-item">
+          <span class="rail-kicker">Fund compounding capability</span>
+          <p>Invest in shared platforms, not isolated pilots.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="slide" data-title="Infrastructure">
+    <div class="slide-content layout-single">
+      <div class="stack center reveal">
+        <p class="eyebrow">AI as infrastructure</p>
+        <h2>Think less about “AI features”.<br />Think more about the <span class="text-accent">AI stack</span>.</h2>
+      </div>
+      <div class="infra-stack reveal">
+        <div class="infra-layer"><strong>Interface layer</strong><span>co-pilots, agents, internal tools, product UX</span></div>
+        <div class="infra-layer"><strong>Workflow layer</strong><span>orchestration, approvals, automations, human-in-the-loop</span></div>
+        <div class="infra-layer active"><strong>Intelligence layer</strong><span>models, prompting, routing, memory, tools, evaluation</span></div>
+        <div class="infra-layer"><strong>Trust layer</strong><span>observability, policy, security, audit, cost controls</span></div>
+        <div class="infra-layer"><strong>Data layer</strong><span>source systems, context, permissions, retrieval, feedback loops</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="slide" data-title="CEO mandate">
+    <div class="slide-content layout-single">
+      <div class="stack center reveal">
+        <p class="eyebrow">Implication for CEOs and founders</p>
+        <h2>The mandate is not “launch more AI”.<br />The mandate is <span class="text-accent">orchestrate value creation</span>.</h2>
+      </div>
+      <div class="grid-3 reveal">
+        <article class="decision-card">
+          <span class="decision-index">01</span>
+          <h3>Fund the platform</h3>
+          <p>Budget shared eval, observability, data access, and governance instead of only use-case POCs.</p>
+        </article>
+        <article class="decision-card highlighted">
+          <span class="decision-index">02</span>
+          <h3>Change the KPI</h3>
+          <p>Reward repeatable business impact, not demo velocity or pilot count.</p>
+        </article>
+        <article class="decision-card">
+          <span class="decision-index">03</span>
+          <h3>Build cross-functional ownership</h3>
+          <p>AI cannot sit in one innovation silo; it must span product, data, operations, finance, and risk.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="slide" data-title="What to do next">
+    <div class="slide-content layout-two-col">
+      <div class="stack reveal">
+        <p class="eyebrow">Practical next step</p>
+        <h2>A 90-day founder agenda</h2>
+        <ul class="check-list">
+          <li>Audit current AI initiatives by business value and architectural depth</li>
+          <li>Kill thin wrappers with no path to system-level advantage</li>
+          <li>Pick 1–2 core workflows to rewire end-to-end</li>
+          <li>Stand up shared eval + observability + policy rails</li>
+          <li>Make one exec owner accountable for time-to-value</li>
+        </ul>
+      </div>
+      <div class="quote-band reveal">
+        <p>“You cannot buy AI transformation — you must engineer it.”</p>
+        <span>Roland Berger framing, adapted for CEO audience</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="slide slide-outro" data-title="Close">
+    <div class="ambient ambient-c"></div>
+    <div class="slide-content layout-hero">
+      <p class="eyebrow reveal">Bottom line</p>
+      <h2 class="reveal">AI wrappers capture attention.<br />AI infrastructure captures <span class="text-accent">value</span>.</h2>
+      <p class="lede reveal">This repo is structured so design can evolve fast: editable HTML source, reusable visual blocks, GitHub Pages deployment, and a clean path to a more polished narrative once design direction lands.</p>
+      <div class="hero-tags reveal">
+        <a class="button-link" href="docs/PLAN.md">Build plan</a>
+        <a class="button-link ghost" href="docs/STRUCTURE.md">Structure notes</a>
+      </div>
+    </div>
+  </section>
+
+  <script src="scripts/presentation.js"></script>
+</body>
+</html>

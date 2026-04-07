@@ -1,0 +1,237 @@
+.stats-grid {
+  max-width: min(92vw, 760px);
+}
+
+.stat-card,
+.thesis-card,
+.compare-panel,
+.rail-item,
+.decision-card,
+.quote-band,
+.infra-layer {
+  background: var(--panel);
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-soft);
+  backdrop-filter: blur(12px);
+}
+
+.stat-card {
+  min-height: 152px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.stat-card.emphasis {
+  border-color: rgba(56, 189, 248, 0.35);
+  background: linear-gradient(180deg, rgba(56, 189, 248, 0.14), rgba(10, 21, 36, 0.7));
+}
+
+.stat-card.success {
+  border-color: rgba(52, 211, 153, 0.4);
+}
+
+.stat-number {
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 3.4vw, 3.2rem);
+  font-weight: 700;
+  line-height: 1;
+}
+
+.stat-label {
+  color: var(--text-secondary);
+}
+
+.thesis-card,
+.decision-card {
+  padding: 24px;
+  min-height: 220px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  text-align: left;
+}
+
+.thesis-card.active,
+.decision-card.highlighted,
+.infra-layer.active,
+.rail-item.selected {
+  border-color: var(--border-strong);
+  background: linear-gradient(180deg, rgba(110, 231, 183, 0.12), rgba(10, 21, 36, 0.72));
+}
+
+.compare-shell {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  gap: 16px;
+  width: 100%;
+}
+
+.compare-panel {
+  padding: 24px;
+  text-align: left;
+  min-height: 360px;
+}
+
+.compare-panel.bad {
+  border-color: rgba(251, 113, 133, 0.3);
+}
+
+.compare-panel.good {
+  border-color: rgba(52, 211, 153, 0.32);
+}
+
+.compare-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent);
+  font-size: 2.5rem;
+  font-family: var(--font-display);
+}
+
+.bullet-list,
+.check-list {
+  list-style: none;
+  display: grid;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.bullet-list li,
+.check-list li {
+  position: relative;
+  padding-left: 20px;
+  color: var(--text-secondary);
+}
+
+.bullet-list li::before,
+.check-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--accent);
+}
+
+.rail {
+  display: grid;
+  gap: 12px;
+}
+
+.rail-item {
+  padding: 18px 20px;
+  text-align: left;
+}
+
+.rail-item.current {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.rail-item.hover {
+  background: rgba(56, 189, 248, 0.12);
+}
+
+.rail-kicker {
+  display: block;
+  margin-bottom: 8px;
+  font-size: var(--small-size);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--text-muted);
+}
+
+.infra-stack {
+  width: min(92vw, 820px);
+  display: grid;
+  gap: 12px;
+}
+
+.infra-layer {
+  min-height: 72px;
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  text-align: left;
+}
+
+.infra-layer span {
+  color: var(--text-secondary);
+  max-width: 62%;
+}
+
+.decision-index {
+  width: 44px;
+  height: 44px;
+  border-radius: 999px;
+  display: inline-grid;
+  place-items: center;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.08);
+  font-family: var(--font-display);
+  font-size: var(--small-size);
+}
+
+.quote-band {
+  min-height: 280px;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  border-left: 3px solid var(--accent);
+}
+
+.quote-band p {
+  font-family: var(--font-display);
+  font-size: clamp(1.2rem, 2.4vw, 2rem);
+  line-height: 1.1;
+}
+
+.quote-band span {
+  margin-top: 18px;
+  color: var(--text-muted);
+}
+
+.button-link {
+  min-height: 44px;
+  padding: 12px 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  text-decoration: none;
+  color: #05111e;
+  background: var(--accent);
+  font-weight: 700;
+}
+
+.button-link.ghost {
+  background: transparent;
+  color: var(--text-primary);
+  border: 1px solid var(--border-soft);
+}
+
+@media (max-width: 900px) {
+  .compare-shell {
+    grid-template-columns: 1fr;
+  }
+
+  .compare-divider {
+    display: none;
+  }
+
+  .infra-layer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .infra-layer span {
+    max-width: 100%;
+  }
+}
